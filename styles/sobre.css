@@ -155,38 +155,46 @@ li::marker {
 
         /* beneficios */
 
-        .beneficios {
+.beneficios {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     background-color: #0b0b0b;
     padding: 40px 20px;
-    flex-wrap: wrap;
-    text-align: center;
 }
 
 .beneficio {
     color: white;
-    max-width: 200px;
+    text-align: center;
+    width: 22%;
 }
 
 .beneficio i {
     font-size: 40px;
-    color: #f5b041; /* amarelo */
+    color: #f5b041;
     margin-bottom: 10px;
 }
 
-.beneficio h4 {
-    font-size: 18px;
-    margin: 10px 0 5px;
+/* TABLET */
+
+@media (max-width: 768px) {
+
+    .beneficio {
+        width: 45%;
+    }
+
 }
 
-.beneficio p {
-    font-size: 14px;
-    color: #ccc;
+/* CELULAR */
+
+@media (max-width: 480px) {
+
+    .beneficio {
+        width: 45%;
+    }
+
 }
-
-
 
         /* rodape */
 
