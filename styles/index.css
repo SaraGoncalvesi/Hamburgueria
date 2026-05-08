@@ -196,6 +196,12 @@ nav ul li a:hover{
     }
 }
 
+/*Tabela*/
+.table th {
+    text-shadow: none;
+    font-weight: normal;
+}
+
 footer {
     background-color: black;
     width: 100%;

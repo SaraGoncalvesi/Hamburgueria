@@ -90,19 +90,17 @@ nav ul li a:hover {
     margin-bottom: 20px;
     color: black;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-    font-weight: bold;
+   
 }
 
 .conteudo-principal h2 {
     font-size: 30px;
     margin: 15px 0;
-    font-weight: bold;
 }
 
 .conteudo-principal h3 {
     color: rgb(221, 251, 0);
     font-size: 30px;
-    font-weight: bold;
     margin-bottom: 10px;
 }
 
@@ -117,7 +115,7 @@ nav ul li a:hover {
 .conteudo-principal ul li a {
     color: black;
     font-size: 20px;
-    font-weight: bold;
+   
 }
 
 .logo {
