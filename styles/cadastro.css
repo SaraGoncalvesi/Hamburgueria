@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+html,
+body {
+  background-color: #fff;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+/* MAIN */
+
+main {
+  min-height: 80vh;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #212529;
+  padding: 30px 0;
+  text-align: center;
+  width: 100%;
+}
+
+footer p {
+  color: #fff;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* TÍTULO */
+
+h1 {
+  color: #000;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* REDES */
+
+.social {
+  margin-bottom: 30px;
+}
+
+.img {
+  height: 50px;
+  width: 50px;
+  transition: 0.3s;
+}
+
+.img:hover {
+  transform: scale(1.1);
+}
+
+/* LINKS */
+
+div a {
+  text-decoration: none;
+  color: #fdc209;
+  font-size: 14px;
+}
+
+div a:hover {
+  color: #f0b609;
+}
+
+/* LOGIN */
+
+.login {
+  font-size: 14px;
+}
+
+/* INPUTS */
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.input-field {
+  width: 100%;
+  height: 50px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  background-color: #fff;
+}
+
+/* LABEL */
+
+.input-label {
+  position: absolute;
+  color: #000;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  transition: 0.3s;
+  background-color: #fff;
+  padding: 0 4px;
+}
+
+/* EFEITO FLOAT */
+
+.input-field:focus + .input-label,
+.input-field:not(:placeholder-shown) + .input-label,
+select:valid + .input-label {
+  top: 0;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+
+  .navbar-brand {
+    font-size: 14px;
+  }
+
+  .img {
+    width: 40px;
+    height: 40px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .login {
+    text-align: center;
+  }
+
+  .input-field {
+    font-size: 14px;
+  }
+
+}
