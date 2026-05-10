@@ -52,7 +52,8 @@ O projeto foi desenvolvido com foco em:
 
 ## Colaboradores
 
-- @SaraGoncalvesi
-- @gustavosantos0238-dev
-- @AliceTravassos
-- jesussalvaeliberta2023
+- [Alice Travassos](https://github.com/AliceTravassos)
+- [Gustavo Santos](https://github.com/gustavosantos0238-dev)
+- [Maria Fernanda](https://github.com/MaferModesto)
+- [Sara Gonçalves](https://github.com/SaraGoncalvesi)
+- [Wellington Nascimento](https://github.com/jesussalvaeliberta2023)
