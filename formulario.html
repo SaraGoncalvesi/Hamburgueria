@@ -1,260 +1,270 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-          rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
     <!-- ICONS -->
-    <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="icon" href="/image/logo i9lar.png" type="image/png" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./styles/formulario.css">
+    <link rel="stylesheet" href="./styles/formulario.css" />
     <title>Solicite o seu Orçamento</title>
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-            <img src="./image/logoBilhar.jpeg"
-                     width="40"
-                     class="me-2 rounded-circle">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img
+            src="./image/logoBilhar.jpeg"
+            width="40"
+            class="me-2 rounded-circle"
+          />
 
-                I9lar Mesas de Bilhar
-            </a>
-        </div>
+          I9lar Mesas de Bilhar
+        </a>
+      </div>
     </nav>
-
 
     <!-- BANNER -->
     <section class="banner-formulario">
-
-        <div>
-            <h1>Solicite seu Orçamento</h1>
-            <p>Mesas profissionais para sua área de lazer </p>
-
-        </div>
+      <div>
+        <h1>Solicite seu Orçamento</h1>
+        <p>Mesas profissionais para sua área de lazer</p>
+      </div>
     </section>
-
 
     <!-- FORMULÁRIO -->
     <section class="container py-5">
-        <div class="row justify-content-center">
+      <div class="row justify-content-center">
         <div class="col-lg-8">
-        <div class="card shadow-lg border-0 formulario-card">
-        <div class="card-body p-5">
+          <div class="card shadow-lg border-0 formulario-card">
+            <div class="card-body p-5">
+              <h2 class="text-center mb-4">Formulário de Orçamento</h2>
 
-            <h2 class="text-center mb-4">
-                Formulário de Orçamento
-            </h2>
+              <form onsubmit="calcOrcamento()">
+                <!-- NOME -->
+                <div class="mb-3">
+                  <label class="form-label"> Nome </label>
 
-            <form id="orcamentoForm">
+                  <input type="text" class="form-control" id="nome" required />
+                </div>
 
-                    <!-- NOME -->
-                     <div class="mb-3">
-                        <label class="form-label">
-                            Nome
-                        </label>
+                <!-- EMAIL -->
+                <div class="mb-3">
+                  <label class="form-label"> Email </label>
 
-                            <input type="text"
-                                   class="form-control"
-                                   required>
-                            </div>
+                  <input
+                    type="email"
+                    class="form-control"
+                    required
+                    id="email"
+                  />
+                </div>
 
-                    <!-- EMAIL -->
-                     <div class="mb-3">
-                        <label class="form-label">
-                            Email
-                        </label>
+                <!-- TELEFONE -->
+                <div class="mb-3">
+                  <label class="form-label"> Telefone </label>
 
-                            <input type="email"
-                                    class="form-control"
-                                    required>
-                            </div>
+                  <input type="tel" class="form-control" id="telefone" />
+                </div>
 
-                    <!-- TELEFONE -->
-                     <div class="mb-3">
-                        <label class="form-label">
-                            Telefone
-                        </label>
+                <!-- TIPOS DE MESA -->
+                <div class="mb-4">
+                  <label class="form-label d-block mb-3"> Tipo de Mesa </label>
 
-                            <input type="tel"
-                                    class="form-control">
-                            </div>
-
-            <!-- TIPOS DE MESA -->
-            <div class="mb-4">
-            <label class="form-label d-block mb-3">
-                    Tipo de Mesa
-            </label>
-
-                <div class="row g-3">
-
-                    <div class="col-md-4"> 
-                     <!-- OPÇÃO 1 -->
-                    <label class="form-check checkbox-card"> 
-
-                        <input class="form-check-input"
-                                type="checkbox"
-                                id="rede">
-
-                         <span class="form-check-label">
-                                Mesa de Rede
-                         </span>
-                    </label>
-                    </div>   
-
-
-                    <div class="col-md-4">  
-                    <!-- OPÇÃO 2 -->
-                    <label class="form-check checkbox-card">    
-
-                        <input class="form-check-input"
-                                type="checkbox"
-                                id="redeGrande">
-
-                         <span class="form-check-label">
-                                Mesa de Rede Grande
-                         </span>
-
-                    </label>
-                    </div>    
-
-
-                    <div class="col-md-4"> 
-                    <!-- OPÇÃO 3 -->
-                    <label class="form-check checkbox-card"> 
-
-                        <input class="form-check-input"
-                                type="checkbox"
-                                id="cacapa">
-
-                         <span class="form-check-label">
-                            Mesa de Caçapa
-                         </span>
-                         
-                    </label>
+                  <div class="row g-3">
+                    <div class="col-md-4">
+                      <!-- OPÇÃO 1 -->
+                      <label class="checkbox-card">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="rede"
+                        />
+                        <span class="form-check-label">Mesa de Rede</span>
+                      </label>
                     </div>
-
-
-                    <div class="col-md-4"> 
-                    <!-- OPÇÃO 4 -->
-                    <label class="form-check checkbox-card"> 
-
-                        <input class="form-check-input"
-                            type="checkbox"
-                            id="cacapaGrande">
-
-                        <span class="form-check-label">
-                            Mesa de Caçapa Grande
-                        </span>
-
-                    </label>
-                    </div>
-
-
-                    <div class="col-md-4"> 
-                    <!-- OPÇÃO 5 -->
-                    <label class="form-check checkbox-card"> 
-
-                        <input class="form-check-input"
-                                type="checkbox"
-                                id="pebolim">
-
-                         <span class="form-check-label">                    
-                            Pebolim
-                        </span>
-                    </label>
-                    </div>    
-
 
                     <div class="col-md-4">
-                    <!-- OPÇÃO 6 -->
-                    <label class="form-check checkbox-card"> 
-                        <input class="form-check-input"
-                                type="checkbox"
-                                id="tenis">
-
-                         <span class="form-check-label">
-                                Tênis de Mesa
-                         </span>
-                    </label>
+                      <!-- OPÇÃO 2 -->
+                      <label class="checkbox-card">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="redeGrande"
+                        />
+                        <span class="form-check-label">Mesa de Rede Grande</span>
+                      </label>
                     </div>
-        
-                    
+
+                    <div class="col-md-4">
+                      <!-- OPÇÃO 3 -->
+                      <label class="checkbox-card">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="cacapa"
+                        />
+                        <span class="form-check-label">Mesa de Caçapa</span>
+                      </label>
+                    </div>
+
+                    <div class="col-md-4">
+                      <!-- OPÇÃO 4 -->
+                      <label class="checkbox-card">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="cacapaGrande"
+                        />
+                        <span class="form-check-label">Mesa de Caçapa Grande</span>
+                      </label>
+                    </div>
+
+                    <div class="col-md-4">
+                      <!-- OPÇÃO 5 -->
+                      <label class="checkbox-card">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="pebolim"
+                        />
+                        <span class="form-check-label">Pebolim</span>
+                      </label>
+                    </div>
+
+                    <div class="col-md-4">
+                      <!-- OPÇÃO 6 -->
+                      <label class="checkbox-card">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="tenis"
+                        />
+                        <span class="form-check-label">Tênis de Mesa</span>
+                      </label>
+                    </div>
+                  </div>
                 </div>
-            </div>
 
-
-                    <!-- MENSAGEM -->
-                    <div class="mb-4">
-                        <label class="form-label">
-                            Observações
-                        </label>
-
-                        <textarea class="form-control"
-                            rows="4">
-                        </textarea>
-                    </div>
-
-                    <!-- BOTÃO -->
-                     <button type="submit"
-                        class="btn btn-warning w-100">
-                            Solicite seu Orçamento
-                    </button>
-
-            </form>
-
-                    </div>
-
+                <!-- MENSAGEM -->
+                <div class="mb-4">
+                    <label class="form-label"> Observações </label>
+                    <textarea class="form-control" rows="4" id="observacoes"></textarea>
                 </div>
 
-            </div>
+                <!-- BOTÃO -->
+                <button type="submit" class="btn btn-warning w-100">
+                  Solicite seu Orçamento
+                </button>
+              </form>
 
+              <!-- RESULTADO -->
+              <div id="orcamentoResult" class="card shadow-lg border-0 formulario-card" style="display: none;">
+                <div class="card-body">
+                  <h3 class="text-center mb-4">Orçamento Concluído</h3>
+                  <p>
+                    <strong>Nome:</strong>
+                    <span id="nomeOrcamento"></span>
+                  </p>
+                  <p>
+                    <strong>Email:</strong>
+                    <span id="resultOrcamento"></span>
+                  </p>
+                  <p>
+                    <strong>Telefone:</strong>
+                    <span id="telOrcamento"></span>
+                  </p>
+                  <p>
+                    <strong>Mesas Selecionadas:</strong>
+                    <span id="mesasOrcamento"></span>
+                  </p>
+                  <p>
+                    <strong>Valor Total:</strong>
+                    R$ <span id="valorOrcamento"></span>
+                  </p>
+                  <p>
+                    <strong>Observações:</strong>
+                    <span id="obsOrcamento"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
+      </div>
     </section>
-
 
     <!-- FOOTER -->
     <footer class="bg-dark text-white text-center p-4">
-
-        © I9lar Mesas de Bilhar
-
+      © I9lar Mesas de Bilhar
     </footer>
-
 
     <!-- BOOTSTRAP JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-
     <!-- SCRIPT -->
     <script>
+        function calcOrcamento() { 
+            event.preventDefault();
 
-        document
-            .getElementById("orcamentoForm")
+            const nome = document.getElementById("nome").value;
+            const email = document.getElementById("email").value;
+            const telefone = document.getElementById("telefone").value;
+            const observacoes = document.getElementById("observacoes").value;
 
-            .addEventListener("submit", function(event){
+            // String que define valor das mesas e valor
+            let mesas = "";
+            let valorMesas = 0;
 
-                event.preventDefault();
+            // Mesas quando selecionadas
+            if (document.getElementById("rede").checked) {
+                mesas = mesas + "Mesa de Rede, ";
+                valorMesas = valorMesas + 1500;
+            } if (document.getElementById("redeGrande").checked) {
+                mesas = mesas + "Mesa de Rede Grande, ";
+                valorMesas = valorMesas + 2500;
+            } if (document.getElementById("cacapa").checked) {
+                mesas = mesas + "Mesa de Caçapa, ";
+                valorMesas = valorMesas + 3000;
+            } if (document.getElementById("cacapaGrande").checked) {
+                mesas = mesas + "Mesa de Caçapa Grande, ";
+                valorMesas = valorMesas + 4500;
+            } if (document.getElementById("pebolim").checked) {
+                mesas = mesas + "Pebolim, ";
+                valorMesas = valorMesas + 1200;
+            } if (document.getElementById("tenis").checked) {
+                mesas = mesas + "Tênis de Mesa, ";
+                valorMesas = valorMesas + 1800;
+            } if (mesas == "") {
+                alert("Selecione pelo menos uma mesa!"); 
+                return;
+            }
 
-                alert("Orçamento enviado!");
+            // Motra o Modal do orçamento
+            document.getElementById("orcamentoResult").style.display = "block";
 
-                this.reset();
-
-            });
-
+            // Dados do orçamento
+            document.getElementById("nomeOrcamento").innerHTML = nome;
+            document.getElementById("resultOrcamento").innerHTML = email;
+            document.getElementById("telOrcamento").innerHTML = telefone;
+            document.getElementById("mesasOrcamento").innerHTML = mesas;
+            document.getElementById("valorOrcamento").innerHTML = valorMesas.toFixed(2);
+            document.getElementById("obsOrcamento").innerHTML = observacoes;
+        }
     </script>
-
-</body>
-
+  </body>
 </html>
