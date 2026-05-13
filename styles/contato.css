@@ -36,8 +36,13 @@ nav ul li a {
     transition: 0.3s;
 }
 
-nav ul li a:hover {
-    color: rgb(237, 236, 234);
+.nav-link{
+    transition: 0.3s;
+}
+
+.nav-link:hover{
+    color: #ffc107 !important;
+    padding-left: 5px;
 }
 
 
@@ -146,14 +151,14 @@ nav ul li a:hover {
 }
 
 
-footer {
+footer{
     background-color: black;
     width: 100%;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
 }
 
-footer p {
+footer p{
     color: white;
     font-size: 16px;
     margin: 0;

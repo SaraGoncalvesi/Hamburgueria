@@ -12,6 +12,7 @@ body{
     background-color: rgb(213, 211, 210);
 }
 
+
 .carousel-mesas {
     width: 100%;
 }
@@ -78,9 +79,16 @@ nav ul li a{
     transition: 0.3s;
 }
 
-nav ul li a:hover{
-    color: rgb(237, 236, 234);
+
+.nav-link{
+    transition: 0.3s;
 }
+
+.nav-link:hover{
+    color: #ffc107 !important;
+    padding-left: 5px;
+}
+
 
 
 .primeira-section{
@@ -202,15 +210,14 @@ nav ul li a:hover{
     font-weight: normal;
 }
 
-footer {
+footer{
     background-color: black;
     width: 100%;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
-    bottom: 0;
 }
 
-footer p {
+footer p{
     color: white;
     font-size: 16px;
     margin: 0;
