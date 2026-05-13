@@ -247,7 +247,7 @@
                   <h2 class="text-center mb-4">Formulário de Orçamento</h2>
 
                   <!-- FORMULÁRIO -->
-                  <form onsubmit="calcOrcamento()">
+                  <form onsubmit="calcOrcamento(event)">
                     <!-- NOME -->
                     <div class="mb-3">
                       <label for="nome" class="form-label"> Nome </label>
@@ -560,7 +560,8 @@
     </aside>
 
     <!-- JAVASCRIPT -->
-    <script src="/js/orcamento.js"></script>
+    <script src="js/orcamento.js">
+    </script>
 
     <!-- RODAPÉ -->
     <footer class="text-center py-3">

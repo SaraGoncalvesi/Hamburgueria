@@ -1,4 +1,4 @@
-function calcOrcamento() {
+function calcOrcamento(event)  {
   event.preventDefault();
 
   const nome = document.getElementById("nome").value;
