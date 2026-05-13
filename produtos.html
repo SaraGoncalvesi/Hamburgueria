@@ -1,338 +1,655 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/produtos.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="icon" href="/image/logo i9lar.png" type="image/png" />
+    <link rel="icon" href="/image/logo i9lar.png" type="image/png">
+
     <title>Produtos</title>
 </head>
+
 <body>
+
+    <!-- CABEÇALHO -->
     <header>
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
 
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="./image/logoBilhar.jpeg" alt="Logo" width="40" class="me-2">
-                I9lar Mesas de Bilhar
-            </a>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-dark bg-dark">
 
-            <div class="d-flex align-items-center">
+            <div class="container-fluid">
 
-                <button class="navbar-toggler me-2" type="button"
+                <!-- LOGO -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+
+                    <img
+                        src="./image/logoBilhar.jpeg"
+                        alt="Logo"
+                        width="40"
+                        class="me-2">
+
+                    I9lar Mesas de Bilhar
+                </a>
+
+                <div class="d-flex align-items-center">
+
+                    <!-- BOTÃO MENU -->
+                    <button
+                        class="navbar-toggler me-2"
+                        type="button"
                         data-bs-toggle="offcanvas"
                         data-bs-target="#menuLateral">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="O que você procura?">
-                    <button class="btn btn-warning" type="submit">Procurar</button>
-                </form>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
+                    <!-- PESQUISA -->
+                    <form class="d-flex">
 
-            </div>
-
-        </div>
-    </nav>
-     <section class="banner-produto">
-    <h1>Produtos</h1>
-</section>
-
-    <!--CARDS DOS PRODUTOS-->
-    <section class="container py-5">
-    <div class="row g-4">
-
-        <div class="col-md-4">
-            <div class="card produto-card shadow">
-                <img src="image/RedinhaProduto.jpeg" class="card-img-top" alt="Mesa de Rede">
-                
-                <div class="card-body text-center">
-                    <h5 class="card-title">Mesa de Rede</h5>
-                    <p class="card-text">
-                        Tamanho: 1.85x1.15 <br><strong>R$2.300,00</strong>
-                    </p>
-                    <a href="https://www.instagram.com/bilhar.horto?igsh=eW1tdHJ2aHVpdGc5" class="btn btn-dark">Ver mais</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="card produto-card shadow">
-                <img src="image/RedeProduto.png" class="card-img-top" alt="Mesa de Rede">
-                
-                <div class="card-body text-center">
-                    <h5 class="card-title">Mesa de Rede Grande</h5>
-                    <p class="card-text">
-                        Tamanho: 2.20x1.20 <br><strong>R$2.300,00</strong>
-                    </p>
-                    <a href="https://www.instagram.com/bilhar.horto?igsh=eW1tdHJ2aHVpdGc5" class="btn btn-dark">Ver mais</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="card produto-card shadow">
-                <img src="image/CacapaProduto.png" class="card-img-top" alt="Mesa de Caçapa">
-                
-                <div class="card-body text-center">
-                    <h5 class="card-title">Mesa de Caçapa</h5>
-                    <p class="card-text">
-                        Tamanho: 1.90x1.20 <br> <strong>R$2.500,00</strong>
-                    </p>
-                    <a href="https://www.instagram.com/bilhar.horto?igsh=eW1tdHJ2aHVpdGc5" class="btn btn-dark">Saiba 
-mais</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card produto-card shadow">
-                <img src="image/CacapaAzulProdutos.png" class="card-img-top" alt="Mesa de caçapa">
-                
-                <div class="card-body text-center">
-                    <h5 class="card-title">Mesa de Caçapa Grande</h5>
-                    <p class="card-text">
-                        Tamanho: 2.26x1.26 <br><strong>R$2.500,00</strong>
-                    </p>
-                    <a href="#" class="btn btn-dark">Saiba mais</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card produto-card shadow">
-                <img src="image/PebolimProduto.png" class="card-img-top" alt="Pebolim">
-                
-                <div class="card-body text-center">
-                    <h5 class="card-title">Pebolim Profissional</h5>
-                    <p class="card-text">
-                        Tamanho: 1.35x0.85 <br><strong>R$1.800.00</strong>
-                    </p>
-                    <a href="#" class="btn btn-dark">Saiba mais</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card produto-card shadow">
-                <img src="image/TenisdeMesaProduto.png" class="card-img-top" alt="Tenis de Mesa">
-                
-                <div class="card-body text-center">
-                    <h5 class="card-title">Tenis de Mesa Oficial</h5>
-                    <p class="card-text">
-                        Tamanho: 2.74x1.52 <br><strong>R$1.500,00</strong>
-                    </p>
-                    <a href="#" class="btn btn-dark">Saiba mais</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-<section class="orcamento">
-  <div class="container py-5">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="card shadow-lg border-0 formulario-card">
-            <div class="card-body p-5">
-              <h2 class="text-center mb-4">Formulário de Orçamento</h2>
-
-              <form onsubmit="calcOrcamento()">
-                <!-- NOME -->
-                <div class="mb-3">
-                  <label class="form-label"> Nome </label>
-
-                  <input type="text" class="form-control" id="nome" required />
-                </div>
-
-                <!-- EMAIL -->
-                <div class="mb-3">
-                  <label class="form-label"> Email </label>
-
-                  <input
-                    type="email"
-                    class="form-control"
-                    required
-                    id="email"
-                  />
-                </div>
-
-                <!-- TELEFONE -->
-                <div class="mb-3">
-                  <label class="form-label"> Telefone </label>
-
-                  <input type="tel" class="form-control" id="telefone" />
-                </div>
-
-                <!-- TIPOS DE MESA -->
-                <div class="mb-4">
-                  <label class="form-label d-block mb-3"> Tipo de Mesa </label>
-
-                  <div class="row g-3">
-                    <div class="col-md-4">
-                      <!-- OPÇÃO 1 -->
-                      <label class="checkbox-card">
                         <input
-                          class="form-check-input"
-                          type="checkbox"
-                          id="rede"
-                        />
-                        <span class="form-check-label">Mesa de Rede</span>
-                      </label>
-                    </div>
+                            class="form-control me-2"
+                            type="search"
+                            placeholder="O que você procura?">
 
-                    <div class="col-md-4">
-                      <!-- OPÇÃO 2 -->
-                      <label class="checkbox-card">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          id="redeGrande"
-                        />
-                        <span class="form-check-label">Mesa de Rede Grande</span>
-                      </label>
-                    </div>
+                        <button class="btn btn-warning" type="submit">
+                            Procurar
+                        </button>
 
-                    <div class="col-md-4">
-                      <!-- OPÇÃO 3 -->
-                      <label class="checkbox-card">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          id="cacapa"
-                        />
-                        <span class="form-check-label">Mesa de Caçapa</span>
-                      </label>
-                    </div>
+                    </form>
 
-                    <div class="col-md-4">
-                      <!-- OPÇÃO 4 -->
-                      <label class="checkbox-card">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          id="cacapaGrande"
-                        />
-                        <span class="form-check-label">Mesa de Caçapa Grande</span>
-                      </label>
-                    </div>
-
-                    <div class="col-md-4">
-                      <!-- OPÇÃO 5 -->
-                      <label class="checkbox-card">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          id="pebolim"
-                        />
-                        <span class="form-check-label">Pebolim</span>
-                      </label>
-                    </div>
-
-                    <div class="col-md-4">
-                      <!-- OPÇÃO 6 -->
-                      <label class="checkbox-card">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          id="tenis"
-                        />
-                        <span class="form-check-label">Tênis de Mesa</span>
-                      </label>
-                    </div>
-                    <div class="mb-3">
-                <label class="form-label"> Cidade </label>
-              <select class="form-select" id="cidade" required>
-               <option value="" selected disabled>
-                   Selecione sua cidade
-               </option>
-           <option value="Americana">Americana</option>
-          <option value="Atibaia">Atibaia</option>
-          <option value="Campinas">Campinas</option>
-          <option value="Cosmópolis">Cosmópolis</option>
-          <option value="Holambra">Holambra</option>
-          <option value="Hortolândia">Hortolândia</option>
-          <option value="Indaiatuba">Indaiatuba</option>
-          <option value="Itu">Itu</option>
-          <option value="Jaguariúna">Jaguariúna</option>
-          <option value="Jundiaí">Jundiaí</option>
-          <option value="Mogi Guaçu">Mogi Guaçu</option>
-          <option value="Mogi Mirim">Mogi Mirim</option>
-          <option value="Paulínia">Paulínia</option>
-          <option value="Pedreira">Pedreira</option>
-          <option value="Piracicaba">Piracicaba</option>
-          <option value="Rio Claro">Rio Claro</option>
-          <option value="Socorro">Socorro</option>
-          <option value="Sorocaba">Sorocaba</option>
-          <option value="Sumaré">Sumaré</option>
-          <option value="Valinhos">Valinhos</option>
-          <option value="Vinhedo">Vinhedo</option>
-            </select>
-          </div>
-                  </div>
                 </div>
-
-                <!-- MENSAGEM -->
-                <div class="mb-4">
-                    <label class="form-label"> Observações </label>
-                    <textarea class="form-control" rows="4" id="observacoes"></textarea>
-                </div>
-                
-
-                <!-- BOTÃO -->
-                <button type="submit" class="btn btn-warning w-100">
-                  Solicite seu Orçamento
-                </button>
-              </form>
-
-              <!-- RESULTADO -->
-              <div id="orcamentoResult" class="card shadow-lg border-0 formulario-card" style="display: none;">
-                <div class="card-body">
-                  <h3 class="text-center mb-4">Orçamento Concluído</h3>
-                  <p>
-                    <strong>Nome:</strong>
-                    <span id="nomeOrcamento"></span>
-                  </p>
-                  <p>
-                    <strong>Email:</strong>
-                    <span id="resultOrcamento"></span>
-                  </p>
-                  <p>
-                    <strong>Telefone:</strong>
-                    <span id="telOrcamento"></span>
-                  </p>
-                  <p>
-                  <strong>Cidade:</strong>
-                  <span id="cidadeOrcamento"></span>
-                </p>
-                  <p>
-                    <strong>Mesas Selecionadas:</strong>
-                    <span id="mesasOrcamento"></span>
-                  </p>
-                  <p>
-                    <strong>Valor Total:</strong>
-                    R$ <span id="valorOrcamento"></span>
-                  </p>
-                  <p>
-                    <strong>Observações:</strong>
-                    <span id="obsOrcamento"></span>
-                  </p>
-                <div class="text-center mt-4">
-                <button 
-                    onclick="novoOrcamento()">
-                    Fazer Novo Orçamento
-                </button>
-                </div>
-                </div>
-              </div>
             </div>
-          </div>
+        </nav>
+
+        <!-- BANNER -->
+        <section class="banner-produto">
+
+            <h1>Produtos</h1>
+
+        </section>
+
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <!-- PRODUTOS -->
+        <section class="container py-5">
+
+            <div class="row g-4">
+
+                <!-- PRODUTO 1 -->
+                <article class="col-md-4">
+
+                    <div class="card produto-card shadow">
+
+                        <img
+                            src="image/RedinhaProduto.jpeg"
+                            class="card-img-top"
+                            alt="Mesa de Rede">
+
+                        <div class="card-body text-center">
+
+                            <h2 class="card-title h5">
+                                Mesa de Rede
+                            </h2>
+
+                            <p class="card-text">
+                                Tamanho: 1.85x1.15
+                                <br>
+                                <strong>R$2.300,00</strong>
+                            </p>
+
+                            <a
+                                href="https://www.instagram.com/bilhar.horto?igsh=eW1tdHJ2aHVpdGc5"
+                                class="btn btn-dark">
+
+                                Saiba mais
+                            </a>
+
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PRODUTO 2 -->
+                <article class="col-md-4">
+
+                    <div class="card produto-card shadow">
+
+                        <img
+                            src="image/RedeProduto.png"
+                            class="card-img-top"
+                            alt="Mesa de Rede Grande">
+
+                        <div class="card-body text-center">
+
+                            <h2 class="card-title h5">
+                                Mesa de Rede Grande
+                            </h2>
+
+                            <p class="card-text">
+                                Tamanho: 2.20x1.20
+                                <br>
+                                <strong>R$2.300,00</strong>
+                            </p>
+
+                            <a
+                                href="https://www.instagram.com/bilhar.horto?igsh=eW1tdHJ2aHVpdGc5"
+                                class="btn btn-dark">
+
+                                Saiba mais
+                            </a>
+
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PRODUTO 3 -->
+                <article class="col-md-4">
+
+                    <div class="card produto-card shadow">
+
+                        <img
+                            src="image/CacapaProduto.png"
+                            class="card-img-top"
+                            alt="Mesa de Caçapa">
+
+                        <div class="card-body text-center">
+
+                            <h2 class="card-title h5">
+                                Mesa de Caçapa
+                            </h2>
+
+                            <p class="card-text">
+                                Tamanho: 1.90x1.20
+                                <br>
+                                <strong>R$2.500,00</strong>
+                            </p>
+
+                            <a
+                                href="https://www.instagram.com/bilhar.horto?igsh=eW1tdHJ2aHVpdGc5"
+                                class="btn btn-dark">
+
+                                Saiba mais
+                            </a>
+
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PRODUTO 4 -->
+                <article class="col-md-4">
+
+                    <div class="card produto-card shadow">
+
+                        <img
+                            src="image/CacapaAzulProdutos.png"
+                            class="card-img-top"
+                            alt="Mesa de Caçapa Grande">
+
+                        <div class="card-body text-center">
+
+                            <h2 class="card-title h5">
+                                Mesa de Caçapa Grande
+                            </h2>
+
+                            <p class="card-text">
+                                Tamanho: 2.26x1.26
+                                <br>
+                                <strong>R$2.500,00</strong>
+                            </p>
+
+                            <a href="https://www.instagram.com/bilhar.horto?igsh=eW1tdHJ2aHVpdGc5" class="btn btn-dark">
+                                Saiba mais
+                            </a>
+
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PRODUTO 5 -->
+                <article class="col-md-4">
+
+                    <div class="card produto-card shadow">
+
+                        <img
+                            src="image/PebolimProduto.png"
+                            class="card-img-top"
+                            alt="Pebolim">
+
+                        <div class="card-body text-center">
+
+                            <h2 class="card-title h5">
+                                Pebolim Profissional
+                            </h2>
+
+                            <p class="card-text">
+                                Tamanho: 1.35x0.85
+                                <br>
+                                <strong>R$1.800,00</strong>
+                            </p>
+
+                            <a href="https://www.instagram.com/bilhar.horto?igsh=eW1tdHJ2aHVpdGc5" class="btn btn-dark">
+                                Saiba mais
+                            </a>
+
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PRODUTO 6 -->
+                <article class="col-md-4">
+
+                    <div class="card produto-card shadow">
+
+                        <img
+                            src="image/TenisdeMesaProduto.png"
+                            class="card-img-top"
+                            alt="Tênis de Mesa">
+
+                        <div class="card-body text-center">
+
+                            <h2 class="card-title h5">
+                                Tênis de Mesa Oficial
+                            </h2>
+
+                            <p class="card-text">
+                                Tamanho: 2.74x1.52
+                                <br>
+                                <strong>R$1.500,00</strong>
+                            </p>
+
+                            <a href="#" class="btn btn-dark">
+                                Saiba mais
+                            </a>
+
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ORÇAMENTO -->
+        <section class="orcamento">
+
+            <div class="container py-5">
+
+                <div class="row justify-content-center">
+
+                    <div class="col-lg-8">
+
+                        <div class="card shadow-lg border-0 formulario-card">
+
+                            <div class="card-body p-5">
+
+                                <h2 class="text-center mb-4">
+                                    Formulário de Orçamento
+                                </h2>
+
+                                <!-- FORMULÁRIO -->
+                                <form onsubmit="calcOrcamento()">
+
+                                    <!-- NOME -->
+                                    <div class="mb-3">
+
+                                        <label for="nome" class="form-label">
+                                            Nome
+                                        </label>
+
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="nome"
+                                            required>
+                                    </div>
+
+                                    <!-- EMAIL -->
+                                    <div class="mb-3">
+
+                                        <label for="email" class="form-label">
+                                            Email
+                                        </label>
+
+                                        <input
+                                            type="email"
+                                            class="form-control"
+                                            id="email"
+                                            required>
+                                    </div>
+
+                                    <!-- TELEFONE -->
+                                    <div class="mb-3">
+
+                                        <label for="telefone" class="form-label">
+                                            Telefone
+                                        </label>
+
+                                        <input
+                                            type="tel"
+                                            class="form-control"
+                                            id="telefone">
+                                    </div>
+
+                                    <!-- TIPOS DE MESA -->
+                                    <fieldset class="mb-4">
+
+                                        <legend class="form-label d-block mb-3">
+                                            Tipo de Mesa
+                                        </legend>
+
+                                        <div class="row g-3">
+
+                                            <div class="col-md-4">
+
+                                                <label class="checkbox-card">
+
+                                                    <input
+                                                        class="form-check-input"
+                                                        type="checkbox"
+                                                        id="rede">
+
+                                                    <span class="form-check-label">
+                                                        Mesa de Rede
+                                                    </span>
+
+                                                </label>
+                                            </div>
+
+                                            <div class="col-md-4">
+
+                                                <label class="checkbox-card">
+
+                                                    <input
+                                                        class="form-check-input"
+                                                        type="checkbox"
+                                                        id="redeGrande">
+
+                                                    <span class="form-check-label">
+                                                        Mesa de Rede Grande
+                                                    </span>
+
+                                                </label>
+                                            </div>
+
+                                            <div class="col-md-4">
+
+                                                <label class="checkbox-card">
+
+                                                    <input
+                                                        class="form-check-input"
+                                                        type="checkbox"
+                                                        id="cacapa">
+
+                                                    <span class="form-check-label">
+                                                        Mesa de Caçapa
+                                                    </span>
+
+                                                </label>
+                                            </div>
+
+                                            <div class="col-md-4">
+
+                                                <label class="checkbox-card">
+
+                                                    <input
+                                                        class="form-check-input"
+                                                        type="checkbox"
+                                                        id="cacapaGrande">
+
+                                                    <span class="form-check-label">
+                                                        Mesa de Caçapa Grande
+                                                    </span>
+
+                                                </label>
+                                            </div>
+
+                                            <div class="col-md-4">
+
+                                                <label class="checkbox-card">
+
+                                                    <input
+                                                        class="form-check-input"
+                                                        type="checkbox"
+                                                        id="pebolim">
+
+                                                    <span class="form-check-label">
+                                                        Pebolim
+                                                    </span>
+
+                                                </label>
+                                            </div>
+
+                                            <div class="col-md-4">
+
+                                                <label class="checkbox-card">
+
+                                                    <input
+                                                        class="form-check-input"
+                                                        type="checkbox"
+                                                        id="tenis">
+
+                                                    <span class="form-check-label">
+                                                        Tênis de Mesa
+                                                    </span>
+
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </fieldset>
+
+                                    <!-- CIDADE -->
+                                    <div class="mb-3">
+
+                                        <label for="cidade" class="form-label">
+                                            Cidade
+                                        </label>
+
+                                        <select
+                                            class="form-select"
+                                            id="cidade"
+                                            required>
+
+                                            <option value="" selected disabled>
+                                                Selecione sua cidade
+                                            </option>
+
+                                            <option value="Americana">Americana</option>
+                                            <option value="Atibaia">Atibaia</option>
+                                            <option value="Campinas">Campinas</option>
+                                            <option value="Cosmópolis">Cosmópolis</option>
+                                            <option value="Holambra">Holambra</option>
+                                            <option value="Hortolândia">Hortolândia</option>
+                                            <option value="Indaiatuba">Indaiatuba</option>
+                                            <option value="Itu">Itu</option>
+                                            <option value="Jaguariúna">Jaguariúna</option>
+                                            <option value="Jundiaí">Jundiaí</option>
+                                            <option value="Mogi Guaçu">Mogi Guaçu</option>
+                                            <option value="Mogi Mirim">Mogi Mirim</option>
+                                            <option value="Paulínia">Paulínia</option>
+                                            <option value="Pedreira">Pedreira</option>
+                                            <option value="Piracicaba">Piracicaba</option>
+                                            <option value="Rio Claro">Rio Claro</option>
+                                            <option value="Socorro">Socorro</option>
+                                            <option value="Sorocaba">Sorocaba</option>
+                                            <option value="Sumaré">Sumaré</option>
+                                            <option value="Valinhos">Valinhos</option>
+                                            <option value="Vinhedo">Vinhedo</option>
+
+                                        </select>
+                                    </div>
+
+                                    <!-- OBSERVAÇÕES -->
+                                    <div class="mb-4">
+
+                                        <label for="observacoes" class="form-label">
+                                            Observações
+                                        </label>
+
+                                        <textarea
+                                            class="form-control"
+                                            rows="4"
+                                            id="observacoes"></textarea>
+
+                                    </div>
+
+                                    <!-- BOTÃO -->
+                                    <button
+                                        type="submit"
+                                        class="btn btn-warning w-100">
+
+                                        Solicite seu Orçamento
+                                    </button>
+
+                                </form>
+
+                                <!-- RESULTADO -->
+                                <aside
+                                    id="orcamentoResult"
+                                    class="card shadow-lg border-0 formulario-card mt-4"
+                                    style="display: none;">
+
+                                    <div class="card-body">
+
+                                        <h3 class="text-center mb-4">
+                                            Orçamento Concluído
+                                        </h3>
+
+                                        <p>
+                                            <strong>Nome:</strong>
+                                            <span id="nomeOrcamento"></span>
+                                        </p>
+
+                                        <p>
+                                            <strong>Email:</strong>
+                                            <span id="resultOrcamento"></span>
+                                        </p>
+
+                                        <p>
+                                            <strong>Telefone:</strong>
+                                            <span id="telOrcamento"></span>
+                                        </p>
+
+                                        <p>
+                                            <strong>Cidade:</strong>
+                                            <span id="cidadeOrcamento"></span>
+                                        </p>
+
+                                        <p>
+                                            <strong>Mesas Selecionadas:</strong>
+                                            <span id="mesasOrcamento"></span>
+                                        </p>
+
+                                        <p>
+                                            <strong>Valor Total:</strong>
+                                            R$
+                                            <span id="valorOrcamento"></span>
+                                        </p>
+
+                                        <p>
+                                            <strong>Observações:</strong>
+                                            <span id="obsOrcamento"></span>
+                                        </p>
+
+                                        <div class="text-center mt-4">
+
+                                            <button onclick="novoOrcamento()">
+                                                Fazer Novo Orçamento
+                                            </button>
+
+                                        </div>
+
+                                    </div>
+                                </aside>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- MENU LATERAL -->
+    <aside
+        class="offcanvas offcanvas-start text-bg-dark"
+        tabindex="-1"
+        id="menuLateral">
+
+        <div class="offcanvas-header">
+
+            <h2 class="offcanvas-title h5">
+                Menu
+            </h2>
+
+            <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas">
+            </button>
+
         </div>
-      </div>
-    </section>
-      <script>
-        function calcOrcamento() { 
+
+        <div class="offcanvas-body">
+
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">
+                        <i class="bi bi-house"></i>
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="sobre.html">
+                        <i class="bi bi-person"></i>
+                        Sobre
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="produtos.html">
+                        <i class="bi bi-9-circle"></i>
+                        Produtos
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="contato.html">
+                        <i class="bi bi-telephone"></i>
+                        Contato
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="login.html">
+                        <i class="bi bi-person-fill"></i>
+                        Login
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="cadastro.html">
+                        <i class="bi bi-person-fill-add"></i>
+                        Cadastro
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </aside>
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        function calcOrcamento() {
+
             event.preventDefault();
 
             const nome = document.getElementById("nome").value;
@@ -341,42 +658,51 @@ mais</a>
             const cidade = document.getElementById("cidade").value;
             const observacoes = document.getElementById("observacoes").value;
 
-            // String que define valor das mesas e valor
             let mesas = "";
             let valorMesas = 0;
 
-            // Mesas quando selecionadas
             if (document.getElementById("rede").checked) {
-                mesas = mesas + "Mesa de Rede, ";
-                valorMesas = valorMesas + 1500;
-            } if (document.getElementById("redeGrande").checked) {
-                mesas = mesas + "Mesa de Rede Grande, ";
-                valorMesas = valorMesas + 2500;
-            } if (document.getElementById("cacapa").checked) {
-                mesas = mesas + "Mesa de Caçapa, ";
-                valorMesas = valorMesas + 3000;
-            } if (document.getElementById("cacapaGrande").checked) {
-                mesas = mesas + "Mesa de Caçapa Grande, ";
-                valorMesas = valorMesas + 4500;
-            } if (document.getElementById("pebolim").checked) {
-                mesas = mesas + "Pebolim, ";
-                valorMesas = valorMesas + 1200;
-            } if (document.getElementById("tenis").checked) {
-                mesas = mesas + "Tênis de Mesa, ";
-                valorMesas = valorMesas + 1800;
-            } if (mesas == "") {
-                alert("Selecione pelo menos uma mesa!"); 
+                mesas += "Mesa de Rede, ";
+                valorMesas += 1500;
+            }
+
+            if (document.getElementById("redeGrande").checked) {
+                mesas += "Mesa de Rede Grande, ";
+                valorMesas += 2500;
+            }
+
+            if (document.getElementById("cacapa").checked) {
+                mesas += "Mesa de Caçapa, ";
+                valorMesas += 3000;
+            }
+
+            if (document.getElementById("cacapaGrande").checked) {
+                mesas += "Mesa de Caçapa Grande, ";
+                valorMesas += 4500;
+            }
+
+            if (document.getElementById("pebolim").checked) {
+                mesas += "Pebolim, ";
+                valorMesas += 1200;
+            }
+
+            if (document.getElementById("tenis").checked) {
+                mesas += "Tênis de Mesa, ";
+                valorMesas += 1800;
+            }
+
+            if (mesas === "") {
+
+                alert("Selecione pelo menos uma mesa!");
                 return;
             }
 
-            // Mostra o Modal do orçamento
             document.getElementById("orcamentoResult").style.display = "block";
 
-            // Dados do orçamento
             document.getElementById("nomeOrcamento").innerHTML = nome;
             document.getElementById("resultOrcamento").innerHTML = email;
             document.getElementById("telOrcamento").innerHTML = telefone;
-            document.getElementById("cidadeOrcamento").innerText = cidade;
+            document.getElementById("cidadeOrcamento").innerHTML = cidade;
             document.getElementById("mesasOrcamento").innerHTML = mesas;
             document.getElementById("valorOrcamento").innerHTML = valorMesas.toFixed(2);
             document.getElementById("obsOrcamento").innerHTML = observacoes;
@@ -384,81 +710,35 @@ mais</a>
 
         function novoOrcamento() {
 
-    // Limpa formulário
-    document.getElementById("nome").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("telefone").value = "";
-    document.getElementById("cidade").selectedIndex = 0;
-    document.getElementById("observacoes").value = "";
+            document.getElementById("nome").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("telefone").value = "";
+            document.getElementById("cidade").selectedIndex = 0;
+            document.getElementById("observacoes").value = "";
 
-    // Desmarca checkboxes
-    document.getElementById("rede").checked = false;
-    document.getElementById("redeGrande").checked = false;
-    document.getElementById("cacapa").checked = false;
-    document.getElementById("cacapaGrande").checked = false;
-    document.getElementById("pebolim").checked = false;
-    document.getElementById("tenis").checked = false;
+            document.getElementById("rede").checked = false;
+            document.getElementById("redeGrande").checked = false;
+            document.getElementById("cacapa").checked = false;
+            document.getElementById("cacapaGrande").checked = false;
+            document.getElementById("pebolim").checked = false;
+            document.getElementById("tenis").checked = false;
 
-    // Esconde resultado
-    document.getElementById("orcamentoResult").style.display = "none";
-}
+            document.getElementById("orcamentoResult").style.display = "none";
+        }
+
     </script>
 
-</header>
+    <!-- RODAPÉ -->
+    <footer class="text-center py-3">
 
-<div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="menuLateral">
+        <p>
+            &copy; I9lar Mesas de Bilhar
+            <br>
+            CNPJ 54887300000163
+        </p>
 
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title">Menu</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
-    </div>
+    </footer>
 
-    <div class="offcanvas-body">
-
-        <ul class="navbar-nav">
-
-            <li class="nav-item">
-                <a class="nav-link text-white" href="index.html">
-                    <i class="bi bi-house"></i> Home
-                </a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link text-white" href="sobre.html">
-                    <i class="bi bi-person"></i> Sobre
-                </a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link text-white" href="produtos.html">
-                    <i class="bi bi-9-circle"></i> Produtos
-                </a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link text-white" href="contato.html">
-                    <i class="bi bi-telephone"></i> Contato
-                </a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link text-white" href="login.html">
-                    <i class="bi bi-person-fill"></i> Login
-                </a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link text-white" href="cadastro.html">
-                    <i class="bi bi-person-fill-add"></i> Cadastro
-                </a>
-            </li>
-
-        </ul>
-
-    </div>
-</div>
-<footer> <p> &copy; I9lar Mesas de Bilhar 
-    <br>
-    CNPJ 54887300000163</p></footer>
 </body>
+
 </html>
