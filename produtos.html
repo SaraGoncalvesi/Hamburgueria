@@ -484,6 +484,19 @@
                                         </select>
                                     </div>
 
+                                     <!-- DATA -->
+                                    <div class="mb-3">
+
+                                        <label for="dataEntrega" class="form-label">
+                                            Data 
+                                        </label>
+
+                                        <input
+                                            type="date"
+                                            class="form-control"
+                                            id="dataEntrega">
+
+                                    </div>
                                     <!-- OBSERVAÇÕES -->
                                     <div class="mb-4">
 
@@ -538,6 +551,10 @@
                                         <p>
                                             <strong>Cidade:</strong>
                                             <span id="cidadeOrcamento"></span>
+                                        </p>
+                                        <p>
+                                            <strong>Data desejada:</strong>
+                                            <span id="dataOrcamento"></span>
                                         </p>
 
                                         <p>
@@ -656,6 +673,7 @@
             const email = document.getElementById("email").value;
             const telefone = document.getElementById("telefone").value;
             const cidade = document.getElementById("cidade").value;
+            const dataEntrega = document.getElementById("dataEntrega").value;
             const observacoes = document.getElementById("observacoes").value;
 
             let mesas = "";
@@ -703,6 +721,7 @@
             document.getElementById("resultOrcamento").innerHTML = email;
             document.getElementById("telOrcamento").innerHTML = telefone;
             document.getElementById("cidadeOrcamento").innerHTML = cidade;
+            document.getElementById("dataOrcamento").innerHTML = dataEntrega;
             document.getElementById("mesasOrcamento").innerHTML = mesas;
             document.getElementById("valorOrcamento").innerHTML = valorMesas.toFixed(2);
             document.getElementById("obsOrcamento").innerHTML = observacoes;
@@ -714,8 +733,8 @@
             document.getElementById("email").value = "";
             document.getElementById("telefone").value = "";
             document.getElementById("cidade").selectedIndex = 0;
+            document.getElementById("dataEntrega").value = "";
             document.getElementById("observacoes").value = "";
-
             document.getElementById("rede").checked = false;
             document.getElementById("redeGrande").checked = false;
             document.getElementById("cacapa").checked = false;
