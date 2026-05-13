@@ -126,7 +126,7 @@ nav ul li a:hover{
 
 .orcamento {
     padding: 40px;
-    background-color: #111;
+    background-color: #FFD43B;
     color: white;
 }
 
@@ -153,6 +153,7 @@ nav ul li a:hover{
     cursor: pointer;
     font-weight: bold;
 }
+
 beneficios {
     display: flex;
     justify-content: space-around;
